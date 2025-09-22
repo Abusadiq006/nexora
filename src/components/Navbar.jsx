@@ -30,12 +30,15 @@ export default function Navbar() {
           color: "white",
         }}
       >
-        <h1
-          style={{ cursor: "pointer", fontWeight: "bold", color: "white" }}
-          onClick={() => navigate("/")}
-        >
-          NEXORA
-        </h1>
+        <img src="/nexora.png"
+         alt="Nexora logo" 
+         style={{ 
+          height: "75px",
+          maxHeight: "10vw",
+          cursor: "pointer",
+         }}
+         onClick={() => navigate("/")}
+         />
 
         {/* Show hamburger only if logged in */}
         {token && (
