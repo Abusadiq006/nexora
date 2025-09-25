@@ -2,7 +2,8 @@ import axois from "axios"
 
 
 const api = axois.create({
-    baseURL: "http://localhost:5000/api", // your backend
+    baseURL: process.env.REACT_APP_BASE_URL // your backend
+    // baseURL: "http://localhost:5000/api", // your backend
 })
 
 
